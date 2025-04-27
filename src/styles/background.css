@@ -1,0 +1,26 @@
+.background_login {
+  background-image: url("../../public/wake\ left.svg"),
+    url("../../public/wake\ right.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right center;
+  background-size: contain, contain;
+}
+
+.background_dashboard {
+  background-image: url("../../public/wake\ dashboard\ left.svg"),
+    url("../../public/wake\ dashboard\ right.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right center;
+  background-size: contain, contain;
+}
+
+.background_home {
+  background-color: #fafafa;
+}
+
+.background_home_wake {
+  background-image: url("../../public/Wake Home.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
