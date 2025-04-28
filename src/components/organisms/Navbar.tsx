@@ -38,9 +38,16 @@ const Navbar = ({ className, openMenu, isOpenMenu, ...props }: NavbarProps) => {
           <li>
             <TitlesGroup
               icon={Clipboard}
-              text="Requests"
+              text="Reservation"
               className="hover:text-blue-500"
               onClick={() => router.push("/table")}
+            />
+          </li>
+          <li>
+            <TitlesGroup
+              icon={Layers2}
+              text="Destination"
+              className="hover:text-blue-500"
             />
           </li>
           <li>
@@ -50,13 +57,7 @@ const Navbar = ({ className, openMenu, isOpenMenu, ...props }: NavbarProps) => {
               className="hover:text-blue-500"
             />
           </li>
-          <li>
-            <TitlesGroup
-              icon={Layers2}
-              text="Events"
-              className="hover:text-blue-500"
-            />
-          </li>
+
         </ul>
       </nav>
     </section>

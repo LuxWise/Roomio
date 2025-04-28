@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import LogoImg from "../../../public/png/Inmopro.png";
+import LogoImg from "../../../public/png/Roomio.png";
 
 interface LogoProps {
   src?: string; // Permite cambiar el logo si es necesario

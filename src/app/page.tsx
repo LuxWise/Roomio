@@ -60,7 +60,7 @@ const Home = () => {
           </Typography>
         </section>
         <Button
-          text="Start immopro"
+          text="Start Roomio"
           onClick={async () => router.push("/login")}
           className="row-start-9 row-end-10 col-start-3 col-end-5 min-w-[16vw]"
         />

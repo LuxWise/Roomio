@@ -30,7 +30,7 @@ const SelectMenu = ({
   const defaultOptions: Option[] = [
     { id: 1, label: "Inconvenientes", value: "inconvenientes" },
     { id: 2, label: "Solicitudes", value: "solicitudes" },
-    { id: 3, label: "Garantías", value: "garantias" },
+    { id: 3, label: "Novedades", value: "Novedades" },
     { id: 4, label: "Mantenimientos", value: "mantenimientos" },
   ];
 

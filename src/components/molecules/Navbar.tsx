@@ -9,13 +9,13 @@ const Navbar = () => {
           <Icon Icon={Home} text="Dashboard" onClick={() => {}} />
         </li>
         <li>
-          <Icon Icon={Clipboard} text="Request" onClick={() => {}} />
+          <Icon Icon={Clipboard} text="Destination" onClick={() => {}} />
         </li>
         <li>
           <Icon Icon={Calendar} text="Calendar" onClick={() => {}} />
         </li>
         <li>
-          <Icon Icon={Layers2} text="Review" onClick={() => {}} />
+          <Icon Icon={Layers2} text="Reservation" onClick={() => {}} />
         </li>
       </ul>
     </nav>
