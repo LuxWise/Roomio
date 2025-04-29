@@ -16,12 +16,18 @@ interface Option {
   value: string | number;
 }
 
-const RequestPage = () => {
-  const [selectedOption, setSelectedOption] = useState<Option | null>(null);
+const RequestAdminPage = () => {
+  const [selectedUser, setSelectedUser] = useState<Option | null>(null);
+  const [selectedSubject, setSelectedSubject] = useState<Option | null>(null);
 
-  const handleOptionChange = (option: Option | null) => {
-    setSelectedOption(option);
-    console.log("Selected option:", option);
+  const handleUserChange = (option: Option | null) => {
+    setSelectedUser(option);
+    console.log("Selected user:", option);
+  };
+
+  const handleSubjectChange = (option: Option | null) => {
+    setSelectedSubject(option);
+    console.log("Selected subject:", option);
   };
 
   return (
@@ -30,45 +36,39 @@ const RequestPage = () => {
         variant="max"
         className="col-start-2 col-end-10 row-start-4 row-end-5"
       >
-        Create Request
+        Make a reservation
       </Typography>
 
-      <SelectMenu
-        label="Select Type"
-        className="col-start-2 col-end-5 row-start-6 row-end-7"
-        placeholder="Search request types..."
-        onChange={handleOptionChange}
-        value={selectedOption}
-      />
-
       <InputGroup
-        label="Title"
-        id="title"
-        className="col-start-2 col-end-5 row-start-8 row-end-9"
+        label="Reservation holder name"
+        id="user"
+        className="col-start-2 col-end-5 row-start-6 row-end-7"
       />
 
-      <TextAreaGroup
-        label="Description"
-        id="description"
-        className="col-start-2 col-end-5 row-start-10 row-end-12"
+      <SelectMenu
+        label="Payment method"
+        className="col-start-2 col-end-5 row-start-8 row-end-9"
+        placeholder="Select option..."
+        onChange={handleSubjectChange}
+        value={selectedSubject}
       />
 
       <PreviewRequest
-        title="Preview Request"
+        title="Preview Reservation"
         className="col-start-6 col-end-12 row-start-5 row-end-11"
       />
 
       <Button
-        text="Create Request"
+        text="Pay reservation"
         className="col-start-8 col-end-10 row-start-12 row-end-13"
         variant="white"
         shadow="shadowButton"
         onClick={async () => {
-          console.log("Create Request", { selectedOption });
+          console.log("Send Request", { selectedUser, selectedSubject });
         }}
       />
     </UserDetails>
   );
 };
 
-export default RequestPage;
+export default RequestAdminPage;
